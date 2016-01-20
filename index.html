@@ -1,9 +1,72 @@
-<html>
-<head>
-</head>
+<!DOCTYPE html>
+<!-- By gayatri Biswal -->
+<html lang="en">
+<HEAD>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css" >
+    <link href="Bootstrap/css/bootstrap-theme.min.css"  rel="stylesheet">
+    <link href="Bootstrap/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.11.0/bootstrap-social.css" rel="stylesheet">
+    <link href="Bootstrap/fonts/glyphicons-halflings-regular.eot">
+    <title>Text editor</title>
+    <style>
+        .size{
+            width:900px; 
+            height:300px;
+            display:block;
+            border:2px solid grey;
+        }
+        .top-buffer
+        {
+            margin-top:20px
+        }
+    </style>
+</HEAD>
+
 <body>
-Hello!wats up
-<br />
-Changed
+  <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-xs-12 col-sm-8">
+                    <h1>Normal Text Editor</h1>
+                    <p style="padding:40px;"></p>
+                    <p>This provides a normal edit functionality with various fonts and styles</p>
+                </div>
+            </div>
+        </div>
+    </header>
+     <div class="container">
+  <div class="row">
+<div class="col-sm-12">
+  <button type="button" class="btn btn-default">
+      <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+  </button>
+  <button type="button"  class="btn btn-default">
+      <span class="glyphicon glyphicon-align-center" aria-hidden="true"></span>
+  </button>
+         
+  <button type="button"  class="btn btn-default">
+      <span class="glyphicon glyphicon-align-right" aria-hidden="true"></span>
+  </button>
+  <button type="button"  class="btn btn-default">
+      <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+  </button>
+  <button type="button"  class="btn btn-default">
+      <span class="glyphicon glyphicon-font" aria-hidden="true"></span>
+  </button>
+  <button type="button"  class="btn btn-default">
+      <span class="glyphicon glyphicon-bold" aria-hidden="true"></span>
+  </button>
+  <button type="button"  class="btn btn-default">
+      <span class="glyphicon glyphicon-italic" aria-hidden="true"></span>
+  </button>
+    </div> </div>
+</div>
+    <div class="row">
+    <div  contenteditable="true" class="col-sm-offset-1 col-sm-10 top-buffer size">
+        this is editable
+    </div>
+    </div>
 </body>
 </html>
